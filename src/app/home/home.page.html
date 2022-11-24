@@ -1,0 +1,41 @@
+
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Calculadora</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <h1>{{termino}}</h1>
+  <ion-grid>
+    <ion-row>
+      <ion-button size="large" (click)="add('1')">1</ion-button>
+      <ion-button size="large" (click)="add('2')">2</ion-button>
+      <ion-button size="large" (click)="add('3')">3</ion-button>
+    </ion-row>
+    <ion-row>
+      <ion-button size="large" (click)="add('4')">4</ion-button>
+      <ion-button size="large" (click)="add('5')">5</ion-button>
+      <ion-button size="large"(click)="add('6')">6</ion-button>
+    </ion-row>
+    <ion-row>
+      <ion-button size="large"(click)="add('7')">7</ion-button>
+      <ion-button size="large"(click)="add('8')">8</ion-button>
+      <ion-button size="large"(click)="add('9')">9</ion-button>
+    </ion-row>
+  </ion-grid>
+  
+  
+  <ion-grid>
+    <ion-row>
+      <ion-button size="large"(click)="add('+')">+</ion-button>
+      <ion-button size="large"(click)="add('-')">-</ion-button>
+      <ion-button size="large"(click)="add('*')">*</ion-button>
+      <ion-button size="large"(click)="add('/')">/</ion-button>
+      <ion-button size="large" color="success"(click)="operar()">=</ion-button>
+      <ion-button size="large" color="danger" (click)="borrar()">C</ion-button>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
